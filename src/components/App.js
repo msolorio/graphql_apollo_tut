@@ -11,11 +11,11 @@ function App() {
       <Header />
       <div className='ph3 pv1 background-gray'>
         <Switch>
-          <Route exact path='/'>
-            <LinkList />
+          <Route exact path='/' component={LinkList}>
+            {/* <LinkList /> */}
           </Route>
-          <Route exact path='/create'>
-            <CreateLink />
+          <Route exact path='/create' component={CreateLink}>
+            {/* <CreateLink /> */}
           </Route>
         </Switch>
       </div>
